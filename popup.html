@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 3px;
+        min-width: 100px;
+        background: black;
+        color: #8a378c;
+      }
+      p {
+        text-align: center;
+        font-weight: bold;
+      }
+      hr {
+        opacity: 0.2;
+      }
+      input[type="number"] {
+        text-align: center;
+      }
+      input[type="range"] {
+        width: 100%;;
+        cursor: pointer;
+      }
+      button {
+        width: -webkit-fill-available;
+        margin: 2px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+      <p>Altura</p>
+      <input id="rangeSelector" type="range" value="250" min="0" max="1000" />
+      <input id="rangeInput" type="number" value="250"></input>
+      <hr>
+      <p>Margem</p>
+      <input id="marginSelector" type="range" value="0" min="0" max="1000" />
+      <input id="marginInput" type="number"  value="0"></input>
+      <hr>
+      <button id="timbrado">+ Timbrado</button>
+      <button id="print">Imprimir</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
